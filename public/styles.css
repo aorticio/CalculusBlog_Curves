@@ -1,0 +1,167 @@
+/* html */
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  color: #213F84;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F1EAD2;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+/* header */
+header {
+  background-color: #C3A97E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header .logo a {  
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* main */
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* sidebar */
+main aside {
+  position: sticky;
+  align-self: flex-start;
+  height: fit-content;
+  top: 0;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+main aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+main aside nav .site__navigation a {
+  text-decoration: none; 
+  font-size: 1.25rem;
+}
+
+main aside nav .site__navigation a:hover {
+  color: #255be4;
+}
+
+main aside nav .table__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: .5rem;
+}
+
+main aside nav .table__list .table__items a {
+  text-decoration: none;
+  padding: 0 0 0 1rem;
+}
+
+main aside nav .table__list .table__items a:hover {
+  color: #255be4;
+}
+
+/* content */
+main .content {
+  flex: 1;
+}
+
+/* hero section */
+main .content .hero {
+  background: url(https://www.transcontinentaltimes.com/wp-content/uploads/2023/07/Leonardo-da-Vinci.jpg) center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  border: 6px solid #365194;
+  border-radius: 6px;
+  height: 60vh;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+main .content .hero::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, .6);
+  inset: 0;
+  z-index: 1;
+}
+
+main .content .hero * {
+  position: relative;
+  z-index: 2;
+}
+
+main .content .hero > * {
+  color: aliceblue;
+  max-width: 100vw;
+  padding: .25rem;
+}
+
+/* post section */
+main .content .blog {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: .25rem 0 0 0;
+  gap: .25rem;
+}
+
+main .content .blog .blog__post {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  border: 6px solid #365194;
+  padding: 1rem;
+  width: 720px;
+  max-width: 100%;
+  gap: .5rem;
+}
+
+main .content .blog .blog__post .blog-image {
+  align-self: center;
+  object-fit: cover;
+  border-radius: .25rem;
+  width: 65%;
+  aspect-ratio: 16/9;
+}
+
+main .content .blog .blog__post a {
+  font-weight: bold;
+  color: #D94C4C;
+}
+
+main .content .blog .blog__post a:hover {
+  color: #4CAD69;
+}
+
+/* footer */
+main .content footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid #365194;
+  padding: 2rem;
+  margin: 1rem;
+}
