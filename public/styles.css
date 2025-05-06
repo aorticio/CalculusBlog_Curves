@@ -65,7 +65,7 @@ main aside nav .table__list {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  gap: .5rem;
+  gap: 1rem;
 }
 
 main aside nav .table__list .table__items a {
